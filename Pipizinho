@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Menu Estilizada</title>
+    <style>
+        /* Estilos Gerais da Página */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Cor de fundo de trás (o cinza esverdeado escuro da imagem) */
+            background-color: #1a201a; 
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;    /* Centraliza verticalmente */
+            height: 100vh;          /* Ocupa toda a altura da tela */
+            font-family: sans-serif;
+        }
+
+        /* O contêiner principal da barra */
+        .barra-menu {
+            /* Cor do corpo principal da barra (preto escuro) */
+            background-color: #161818; 
+            
+            /* Largura e Altura da barra (ajuste conforme necessário) */
+            width: 600px; 
+            height: 100px;
+            
+            /* Cantos arredondados apenas em cima */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+            /* Borda inferior fina (a linha cinza) */
+            border-bottom: 4px solid #808080; /* Cor da linha cinza */
+            
+            /* Propriedade para garantir que o conteúdo não vaze dos cantos arredondados */
+            overflow: hidden; 
+        }
+
+        /* Exemplo de conteúdo dentro da barra (apenas para teste) */
+        .barra-menu::after {
+            content: "Exemplo de Conteúdo";
+            color: #999;
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- AQUI ESTÁ O SEU ELEMENTO DA BARRA -->
+    <div class="barra-menu"></div>
+    <!-- FIM DA BARRA -->
+
+</body>
+</html>
